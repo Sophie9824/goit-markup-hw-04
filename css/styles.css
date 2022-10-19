@@ -177,7 +177,9 @@ li {
     color: var(--brand-color);
 }
 
-.accent {
+
+
+ .site-link.active {
     color: var(--brand-color);
  }
 
@@ -206,8 +208,7 @@ li {
     
 }
  .business-decisions {
-    max-width: 1600px; 
-    min-height: 600px;
+    max-width: 1600px;     
     margin-left: auto;
     margin-right: auto;
     background-color: #2F303A;
@@ -616,9 +617,7 @@ footer {
 
 /*стилізація іконок*/
 
-.email-icon {
-    width: 16px;
-    height: 12px;
+.email-icon {    
     margin-right: 10px; 
     fill: var(--social-link-color);   
     
@@ -638,18 +637,14 @@ fill: var(--brand-color);
     fill: var(--brand-color);
 }
 
-.phone-icon {
-    width: 16px;
-    height: 12px;
-    margin-right: 10px;
+.phone-icon {   
+   margin-right: 10px;
     fill: var(--social-link-color);
 }
 
 .benefit-icon {
     width: 70px;
-    height: 70px;
-    content: "" ;
-    
+    height: 70px;      
     
 }
 
@@ -674,9 +669,12 @@ fill: var(--brand-color);
 }
 
 .social-links {
-    display: flex;  
+    display: flex;         
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    gap: 10px;
     margin-top: 16px;
-    margin-bottom: 30px; 
     
    
    
@@ -743,9 +741,7 @@ fill: var(--brand-color);
 
 }
 
-.our-clients {
-    background-color: var(--our-clients-bg);
-}
+
 
 
 .client-logo:not(:last-child) {
@@ -754,7 +750,7 @@ fill: var(--brand-color);
 
 .client-logo:hover,
 .client-logo:focus {
-    background-color:var(--our-clients-bg);
+    background-color:var(--background);
     
 }
 
@@ -771,7 +767,7 @@ fill: var(--brand-color);
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--background);
-    text-align: center;
+    margin-left: 42px;
     margin-bottom: 20px;
 
     
@@ -825,8 +821,7 @@ fill: var(--brand-color);
 }
 
 .footer-links {
-    margin-left: 70px;
-    width: 206px;
+    margin-left: 70px;   
 }
 
 .footer-container {
@@ -837,9 +832,7 @@ fill: var(--brand-color);
 }
 
 .project-link:hover {
-    box-shadow: 1px 4px 6px 0px #00000029;
-    box-shadow: 0px 4px 4px 0px #0000000F;
-    box-shadow: 0px 1px 1px 0px #0000001F;
-
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16); 
 }
+
 
