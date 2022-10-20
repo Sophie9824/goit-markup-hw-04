@@ -619,7 +619,7 @@ footer {
 
 .email-icon {    
     margin-right: 10px; 
-    fill: var(--social-link-color);   
+    fill: var(--another-text-color);   
     
 
 }
@@ -639,7 +639,7 @@ fill: var(--brand-color);
 
 .phone-icon {   
    margin-right: 10px;
-    fill: var(--social-link-color);
+    fill: var(--another-text-color);
 }
 
 .benefit-icon {
@@ -766,8 +766,7 @@ fill: var(--brand-color);
     line-height: calc(16/14);
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: var(--background);
-    margin-left: 42px;
+    color: var(--background);    
     margin-bottom: 20px;
 
     
@@ -777,6 +776,8 @@ fill: var(--brand-color);
 
 .footer-networks {
     display: flex;
+    margin: 0;
+    padding: 0;
     
 }
 
@@ -828,6 +829,7 @@ fill: var(--brand-color);
     display: flex;
     padding-top: 60px;
     padding-bottom: 60px;
+    align-items: baseline;
    
 }
 
