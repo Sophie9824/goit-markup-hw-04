@@ -106,7 +106,7 @@ li {
     line-height: 1.2;     
     color: var(--main-text-color);
     text-decoration: none;
-    display: flex;
+    
     
     
 }
@@ -410,6 +410,7 @@ align-items: center;
 
 
 footer {
+    padding: 60px 0;
     background-color: #2F303A
 }
 
@@ -447,10 +448,9 @@ footer {
 
 }
 
-.footer-logo {
+.footer-logo {   
     
-    
-    padding-bottom: 20px;    
+     
     font-family: 'Raleway';
     font-weight: 700;
     font-size: 26px;
@@ -685,6 +685,7 @@ fill: var(--brand-color);
     margin:0;
     padding: 0;
     fill: var(--social-link-color);
+    border-radius: 50%;
 }
 
 .network-link {
@@ -693,19 +694,33 @@ fill: var(--brand-color);
     justify-content: center;
     width: 44px;
     height: 44px;
+    border-radius: 50%;
+    color: var(--background);
+    
     
 }
 
-.social-network:hover, 
+/* .social-network:hover, 
 .social-network:focus {
     background-color: var(--brand-color);
-    border-radius: 50%;
+    
+    
+} */
+
+
+.network-link:hover ,
+.network-link:focus {
+    background-color: var(--brand-color);
+    fill: currentColor;
     
 }
 
-.network-link:hover .social-link {
+
+
+.social-link:hover,
+.social-link:focus {
     fill: var(--background);
-    }
+}
 
 
 
@@ -754,20 +769,24 @@ fill: var(--brand-color);
     
 }
 
-.company-link:hover .brand-logo {
+.company-link:hover .brand-logo,
+.company-link:focus .brand-logo {
     fill: var(--brand-color);
     border-color: var(--brand-color);
 }
 
 
 .spam {
+    margin: 0;
     font-weight: 700;
     font-size: 14px;
     line-height: calc(16/14);
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: var(--background);    
-    margin-bottom: 20px;
+    color: var(--background); 
+    margin-bottom: 20px;   
+    
+   
 
     
 }
@@ -826,9 +845,7 @@ fill: var(--brand-color);
 }
 
 .footer-container {
-    display: flex;
-    padding-top: 60px;
-    padding-bottom: 60px;
+    display: flex;    
     align-items: baseline;
    
 }
