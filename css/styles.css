@@ -663,7 +663,7 @@ fill: var(--brand-color);
 .social-link {
     width: 20px;
     height: 20px;
-    fill: var(--social-link-color);
+    fill: currentColor;
     
     
 }
@@ -680,11 +680,9 @@ fill: var(--brand-color);
    
 }
 
-.social-network {
-    margin-right: 10px;    
+.social-network {       
     margin:0;
-    padding: 0;
-    fill: var(--social-link-color);
+    padding: 0;  
     border-radius: 50%;
 }
 
@@ -695,31 +693,17 @@ fill: var(--brand-color);
     width: 44px;
     height: 44px;
     border-radius: 50%;
-    color: var(--background);
+    color: var(--social-link-color);
     
     
 }
 
-/* .social-network:hover, 
-.social-network:focus {
-    background-color: var(--brand-color);
-    
-    
-} */
 
 
-.network-link:hover ,
+.network-link:hover,
 .network-link:focus {
     background-color: var(--brand-color);
-    fill: currentColor;
-    
-}
-
-
-
-.social-link:hover,
-.social-link:focus {
-    fill: var(--background);
+    color: var(--background);
 }
 
 
@@ -763,11 +747,7 @@ fill: var(--brand-color);
     margin-right: 30px;
 }
 
-.client-logo:hover,
-.client-logo:focus {
-    background-color:var(--background);
-    
-}
+
 
 .company-link:hover .brand-logo,
 .company-link:focus .brand-logo {
@@ -826,11 +806,6 @@ fill: var(--brand-color);
 
 }
 
-.footer-network:hover,
-.footer-network:focus {
-    fill: var(--background);
-    background-color: var(--brand-color);
-}
 
 .social-linka {
     display: flex;
@@ -838,6 +813,12 @@ fill: var(--brand-color);
     justify-content: center;
     width: 44px;
     height: 44px;
+    border-radius: 50%;
+}
+
+.social-linka:hover,
+.social-linka:focus {
+    background-color: var(--brand-color);
 }
 
 .footer-links {
