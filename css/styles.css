@@ -619,7 +619,7 @@ footer {
 
 .email-icon {    
     margin-right: 10px; 
-    fill: var(--another-text-color);   
+    fill: currentColor;   
     
 
 }
@@ -627,6 +627,8 @@ footer {
 .contact-link {
     display: flex;
     align-items: center;
+    color: var(--another-text-color);
+
 }
 
 .contact-link:hover .email-icon {
@@ -637,9 +639,15 @@ fill: var(--brand-color);
     fill: var(--brand-color);
 }
 
+.contact-link:hover,
+.contact-link:focus {
+    fill: var(--brand-color);
+    color: var(--brand-color);
+}
+
 .phone-icon {   
    margin-right: 10px;
-    fill: var(--another-text-color);
+    fill: currentColor;
 }
 
 .benefit-icon {
